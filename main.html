@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Accessible Portfolio</title>
+  <!-- Linked CSS file (assumed to be in the same directory) -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <!-- Heading with ARIA role -->
+  <h1 role="heading">Deepika's Portfolio</h1>
+
+  <!-- Navigation bar with ARIA role -->
+  <nav role="navigation">
+    <ul role="list">
+      <li role="listitem"><a href="#about">About</a></li>
+      <li role="listitem"><a href="#projects">Projects</a></li>
+      <li role="listitem"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Image with ARIA role -->
+  <img role="img" src="profile.jpg" alt="John Doe smiling" width="200">
+
+  <!-- Brief description -->
+  <section id="about">
+    <p>Hello! I’m Deepika, a front-end developer passionate about building accessible web applications with clean, user-friendly designs.</p>
+  </section>
+
+  <!-- List of skills with ARIA roles -->
+  <section id="projects">
+    <h2>Key Skills</h2>
+    <ul role="list">
+      <li role="listitem">HTML & CSS</li>
+      <li role="listitem">JavaScript & React</li>
+      <li role="listitem">Accessibility (ARIA, WCAG)</li>
+    </ul>
+  </section>
 
 </body>
-
 </html>
